@@ -1,0 +1,19 @@
+TOMCAT_CFG_LOADED="1"
+
+JAVA_HOME="/usr/lib/jvm/jre"
+JAVA_OPTS="-Xms<%= @xms -%> -Xmx<%= @xmx -%> -XX:MaxPermSize=128M -Djava.security.egd=file:/dev/./urandom"
+
+CATALINA_BASE="<%= @catalina_base -%>"
+CATALINA_HOME="/usr/share/tomcat"
+JASPER_HOME="/usr/share/tomcat"
+CATALINA_TMPDIR="/var/cache/tomcat/temp"
+
+TOMCAT_USER="<%= @user -%>"
+
+SECURITY_MANAGER="false"
+
+SHUTDOWN_WAIT="<%= @shutdown_wait -%>"
+
+SHUTDOWN_VERBOSE="<%= @shutdown_verbose -%>"
+
+CATALINA_PID="<%= @catalina_pid -%>"
